@@ -1,0 +1,27 @@
+name: RaffleTickets
+main: com.gmail.moonmasters200.RaffleTickets.Main
+version: 0.0.3-SWAGSNAPSHOT
+author: millenium200
+commands:
+  raffles:
+    description: Shows information about raffles.
+    usage: /<command>
+    permission: raffletickets.info
+    permission-message: You don't have enough swag!
+  raffle:
+    description: Buys swag raffle tickets.
+    usage: /<command> buy
+    permission: raffletickets.purchase
+    permission-message: You don't have enough swag!
+permissions:
+    raffletickets.*:
+        description: Gives access to all newplugin commands
+        children:
+            raffletickets.info: true
+            raffletickets.purchase: true
+    raffletickets.info:
+        description: Allows you to read raffletickets info!
+        default: true
+    raffletickets.purchase:
+        description: Allows you to buy raffle tickets!
+        default: false
