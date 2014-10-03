@@ -127,18 +127,23 @@ public class Main extends JavaPlugin {
 				// Add money
 			}
 			case 15: {
+			  break;
 				// Add tokens
 			}
 			case 16: {
+			  break;
 				// Add tokens
 			}
 			case 17: {
+			  break;
 				// Add tokens
 			}
 			case 18: {
+			  break;
 				// Add tokens
 			}
 			case 19: {
+			  break;
 				// Add tokens
 			}
 			case 20: {
@@ -149,12 +154,15 @@ public class Main extends JavaPlugin {
 				// Add McMMO credits
 			}
 			case 21: {
+			  break;
 				// Add McMMO credits
 			}
 			case 22: {
+			  break;
 				// Add McMMO credits
 			}
 			case 23: {
+			  break;
 				// Add McMMO credits
 			}
 			case 24: {
@@ -179,76 +187,76 @@ public class Main extends JavaPlugin {
 				break;
 			}
 			case 27: {
-			  
+			  break;
 			}
 			case 28: {
-			  
+			  break;
 			}
 			case 29: {
-			  
+			  break;
 			}
 			case 30: {
-			  
+			  break;
 			}
 			case 31: {
-			  
+			  break;
 			}
 			case 32: {
-			  
+			  break;
 			}
 			case 33: {
-			  
+			  break;
 			}
 			case 34: {
-			  
+			  break;
 			}
 			case 35: {
-			  
+			  break;
 			}
 			case 36: {
-			  
+			  break;
 			}
 			case 37: {
-			  
+			  break;
 			}
 			case 38: {
-			  
+			  break;
 			}
 			case 39: {
-			  
+			  break;
 			}
 			case 40: {
-			  
+			  break;
 			}
 			case 41: {
-			  
+			  break;
 			}
 			case 42: {
-			  
+			  break;
 			}
 			case 43: {
-			  
+			  break;
 			}
 			case 44: {
-			  
+			  break;
 			}
 			case 45: {
-			  
+			  break;
 			}
 			case 46: {
-			  
+			  break;
 			}
 			case 47: {
-			  
+			  break;
 			}
 			case 48: {
-			  
+			  break;
 			}
 			case 49: {
-			  
+			  break;
 			}
 			case 50: {
-			  
+			  break;
 			}
 			
 			
