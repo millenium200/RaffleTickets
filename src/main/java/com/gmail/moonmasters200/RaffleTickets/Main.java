@@ -5,6 +5,8 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.enchantments.EnchantmentWrapper;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
@@ -95,7 +97,6 @@ public class Main extends JavaPlugin
 				player.getName() + " 1000");
 				prizeName = "$1000";
 				break;
-				// Add money
 			}
 			case 7:
 			{
@@ -103,7 +104,6 @@ public class Main extends JavaPlugin
 				player.getName() + " 1000");
 				prizeName = "$1000";
 				break;
-				// Add money
 			}
 	    case 8:
 	    {
@@ -119,7 +119,6 @@ public class Main extends JavaPlugin
 				player.getName() + " 1000");
 				prizeName = "$1000";
 				break;
-				// Add money
 			}
       case 10:
       {
@@ -135,7 +134,6 @@ public class Main extends JavaPlugin
 				player.getName() + " 1000");
 				prizeName = "$1000";
 				break;
-				// Add money
 			}
 			case 12:
 			{
@@ -143,7 +141,6 @@ public class Main extends JavaPlugin
 				player.getName() + " 1000");
 				prizeName = "$1000";
 				break;
-				// Add money
 			}
 			case 13:
 			{
@@ -151,7 +148,6 @@ public class Main extends JavaPlugin
 				player.getName() + " 1000");
 				prizeName = "$1000";
 				break;
-				// Add money
 			}
 			case 14:
 			{
@@ -159,15 +155,14 @@ public class Main extends JavaPlugin
 				player.getName() + " 1000");
 				prizeName = "$1000";
 				break;
-				// Add money
 			}
+			// TODO Check that the tokens command works here.
 			case 15:
 			{
 	      Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "tokens give " + 
 	      player.getName() + " 100");
 	      prizeName = "$100 Tokens!";
 			  break;
-				// Add tokens
 			}
 			case 16:
 			{
@@ -175,7 +170,6 @@ public class Main extends JavaPlugin
         player.getName() + " 50");
         prizeName = "$50 Tokens!";
         break;
-        // Add tokens
 			}
 			case 17:
 			{
@@ -183,7 +177,6 @@ public class Main extends JavaPlugin
         player.getName() + " 25");
         prizeName = "$25 Tokens!";
         break;
-        // Add tokens
 			}
 			case 18:
 			{
@@ -191,7 +184,6 @@ public class Main extends JavaPlugin
         player.getName() + " 10");
         prizeName = "$100 Tokens!";
         break;
-        // Add tokens
 			}
 			case 19:
 			{
@@ -199,30 +191,26 @@ public class Main extends JavaPlugin
         player.getName() + " 10");
         prizeName = "$10 Tokens!";
         break;
-        // Add tokens
 			}
+			// TODO Cases 20 - 23: Add McMMO Credits
 			case 20:
 			{
 				Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "eco give " + 
 				player.getName() + " 1000");
 				prizeName = "$1000";
 				break;
-				// Add McMMO credits
 			}
 			case 21:
 			{
 			  break;
-				// Add McMMO credits
 			}
 			case 22:
 			{
 			  break;
-				// Add McMMO credits
 			}
 			case 23:
 			{
 			  break;
-				// Add McMMO credits
 			}
 			case 24:
 			{
@@ -315,7 +303,8 @@ public class Main extends JavaPlugin
 			case 35:
 			{
 			  itemstack = new ItemStack(Material.DIAMOND_SWORD, 1);
-			  itemstack.addEnchantment(SHARPNESS, 3);
+			  Enchantment Sharpness = new EnchantmentWrapper(16);
+			  itemstack.addEnchantment(Sharpness, 4);
 			  prizeName = "Sharp Diamond Sword!";
 			  PlayerInventory inventory = player.getInventory();
 			  inventory.addItem(itemstack);
@@ -323,33 +312,63 @@ public class Main extends JavaPlugin
 			}
 			case 36:
 			{
-			  
-			  break;
+        itemstack = new ItemStack(Material.DIAMOND_SWORD, 1);
+        Enchantment Sharpness = new EnchantmentWrapper(16);
+        itemstack.addEnchantment(Sharpness, 4);
+        prizeName = "Sharp Diamond Sword!";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
+        break;
 			}
 			case 37:
 			{
-			  
-			  break;
+        itemstack = new ItemStack(Material.DIAMOND_SWORD, 1);
+        Enchantment Sharpness = new EnchantmentWrapper(16);
+        itemstack.addEnchantment(Sharpness, 4);
+        prizeName = "Sharp Diamond Sword!";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
+        break;
 			}
 			case 38:
 			{
-			  
-			  break;
+        itemstack = new ItemStack(Material.DIAMOND_AXE, 1);
+        Enchantment Sharpness = new EnchantmentWrapper(16);
+        itemstack.addEnchantment(Sharpness, 3);
+        prizeName = "Sharp Diamond Axe!";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
+        break;
 			}
 			case 39:
 			{
-			  
-			  break;
+        itemstack = new ItemStack(Material.DIAMOND_AXE, 1);
+        Enchantment Sharpness = new EnchantmentWrapper(16);
+        itemstack.addEnchantment(Sharpness, 3);
+        prizeName = "Sharp Diamond Axe!";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
+        break;
 			}
 			case 40:
 			{
-			  
-			  break;
+        itemstack = new ItemStack(Material.DIAMOND_AXE, 1);
+        Enchantment Sharpness = new EnchantmentWrapper(16);
+        itemstack.addEnchantment(Sharpness, 3);
+        prizeName = "Sharp Diamond Axe!";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
+        break;
 			}
 			case 41:
 			{
-			  
-			  break;
+        itemstack = new ItemStack(Material.DIAMOND_AXE, 1);
+        Enchantment Sharpness = new EnchantmentWrapper(16);
+        itemstack.addEnchantment(Sharpness, 3);
+        prizeName = "Sharp Diamond Axe!";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
+        break;
 			}
 			case 42:
 			{
