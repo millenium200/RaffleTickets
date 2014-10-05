@@ -372,47 +372,74 @@ public class Main extends JavaPlugin
 			}
 			case 42:
 			{
-			  
+			  itemstack = new ItemStack(Material.TNT, 16);
+			  prizeName = "16 TNT";
+			  PlayerInventory inventory = player.getInventory();
+			  inventory.addItem(itemstack);
 			  break;
 			}
 			case 43:
 			{
-			  
+        itemstack = new ItemStack(Material.TNT, 16);
+        prizeName = "16 TNT";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
 			  break;
 			}
 			case 44:
 			{
-			  
+        itemstack = new ItemStack(Material.TNT, 16);
+        prizeName = "16 TNT";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
 			  break;
 			}
 			case 45:
 			{
-			  
+        itemstack = new ItemStack(Material.TNT, 16);
+        prizeName = "16 TNT";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
 			  break;
 			}
 			case 46:
 			{
-			  
+        itemstack = new ItemStack(Material.TNT, 16);
+        prizeName = "16 TNT";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
 			  break;
 			}
 			case 47:
 			{
-			  
+        itemstack = new ItemStack(Material.TNT, 16);
+        prizeName = "16 TNT";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
 			  break;
 			}
 			case 48:
 			{
-			  
+        itemstack = new ItemStack(Material.TNT, 16);
+        prizeName = "16 TNT";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
 			  break;
 			}
 			case 49:
 			{
-			  
+        itemstack = new ItemStack(Material.TNT, 16);
+        prizeName = "16 TNT";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
 			  break;
 			}
 			case 50:
 			{
-			  
+        itemstack = new ItemStack(Material.TNT, 16);
+        prizeName = "16 TNT";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
 			  break;
 			}
 			default:
