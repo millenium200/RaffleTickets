@@ -15,15 +15,19 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin
 {
   
+  private String announcePrefix = ChatColor.GOLD + "[Imperial-Raffles] ";
+  
   public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
   {
     if (cmd.getName().equalsIgnoreCase("raffles"))
     {
-      sender.sendMessage(ChatColor.GOLD + "[Swag-Raffles] " + ChatColor.BLUE + "Raffles Plugin by " + ChatColor.RED + "millenium200 " +
-      ChatColor.BLUE + "for Swag-Craft Factions Reborn!");
-      sender.sendMessage(ChatColor.GOLD + "[Swag-Raffles] " + ChatColor.BLUE + "Buy a raffle ticket with " + ChatColor.GREEN +
-      "/raffle buy " + ChatColor.BLUE + "to get a chance to " + "win lots of cool prizes!");
-      sender.sendMessage(ChatColor.GOLD + "[Swag-Raffles] " + ChatColor.BLUE + "Tickets: $250, Prizes include swords, armor, and money!");
+      sender.sendMessage(announcePrefix + ChatColor.BLUE + "Raffles Plugin by " + 
+          ChatColor.RED + "millenium200 " + ChatColor.BLUE + "for Imperial Factions Reborn!");
+      sender.sendMessage(announcePrefix + ChatColor.BLUE + "Buy a raffle "
+          + "ticket with " + ChatColor.GREEN + "/raffle buy " + ChatColor.BLUE + 
+          "to get a chance to " + "win lots of cool prizes!");
+      sender.sendMessage(announcePrefix + ChatColor.BLUE + "Tickets: $250, "
+          + "Prizes include swords, armor, and money!");
       return true;
     }
     
@@ -34,10 +38,15 @@ public class Main extends JavaPlugin
         //When onCommand() returns false, the help message associated with the
         //command is displayed.
         return false;
-      } else if (!(sender instanceof Player)) 
+      } 
+      else if (!(sender instanceof Player)) 
       { //Make sure the sender is a player.
         sender.sendMessage("Only players can buy raffle tickets!");
         return true;
+      }
+      else if (!(args[0].equalsIgnoreCase("buy")))
+      {
+        return false;
       }
       
       Player player = (Player) sender;
@@ -159,36 +168,36 @@ public class Main extends JavaPlugin
       case 15:
       {
         Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "tokens give " + 
-        player.getName() + " 100");
-        prizeName = "$100 Tokens!";
+        player.getName() + " 10");
+        prizeName = "10 Tokens!";
         break;
       }
       case 16:
       {
         Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "tokens give " + 
         player.getName() + " 50");
-        prizeName = "$50 Tokens!";
+        prizeName = "50 Tokens!";
         break;
       }
       case 17:
       {
         Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "tokens give " + 
         player.getName() + " 25");
-        prizeName = "$25 Tokens!";
+        prizeName = "25 Tokens!";
         break;
       }
       case 18:
       {
         Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "tokens give " + 
         player.getName() + " 10");
-        prizeName = "$100 Tokens!";
+        prizeName = "10 Tokens!";
         break;
       }
       case 19:
       {
         Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "tokens give " + 
         player.getName() + " 10");
-        prizeName = "$10 Tokens!";
+        prizeName = "10 Tokens!";
         break;
       }
       // TODO Cases 20 - 23: Add McMMO Credits
@@ -454,9 +463,8 @@ public class Main extends JavaPlugin
       }
       }
      
-      Bukkit.broadcastMessage(ChatColor.GOLD + "[Swag-Raffles]" + ChatColor.AQUA + " "
-            + "" + player.getName() + " has won " + ChatColor.BOLD + 
-            prizeName + ChatColor.AQUA + " from /raffles!");
+      Bukkit.broadcastMessage(announcePrefix + ChatColor.AQUA + player.getName() + 
+          " has won " + ChatColor.BOLD + prizeName + ChatColor.AQUA + " from /raffles!");
       return true;
     }
     return false;
