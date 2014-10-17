@@ -323,6 +323,7 @@ public class Main extends JavaPlugin
       }
       case 35:
       {
+        short id = 92;
         itemstack = new ItemStack(Material.MONSTER EGG, 1, 92);
         prizeName = "Cow spawn egg!";
         PlayerInventory inventory = player.getInventory();
@@ -331,6 +332,7 @@ public class Main extends JavaPlugin
       }
       case 36:
       {
+        short id = 98;
         itemstack = new ItemStack(Material.MONSTER EGG, 1, 98);
         prizeName = "Ocelot spawn egg!";
         PlayerInventory inventory = player.getInventory();
@@ -339,6 +341,7 @@ public class Main extends JavaPlugin
       }
       case 37:
       {
+        short id = 66;
         itemstack = new ItemStack(Material.MONSTER EGG, 1, 66);
         prizeName = "Witch spawn egg!";
         PlayerInventory inventory = player.getInventory();
@@ -347,14 +350,16 @@ public class Main extends JavaPlugin
       }
       case 38:
       {
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, 92);
-        prizeName = "Cow spawn egg!";
+        short id = 90;
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, 90);
+        prizeName = "Pig spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
         break;
       }
       case 39:
       {
+        short id = 94;
         itemstack = new ItemStack(Material.MONSTER EGG, 1, 94);
         prizeName = "Squid spawn egg!";
         PlayerInventory inventory = player.getInventory();
@@ -363,6 +368,7 @@ public class Main extends JavaPlugin
       }
       case 40:
       {
+        short id = 96;
         itemstack = new ItemStack(Material.MONSTER EGG, 1, 96);
         prizeName = "Mooshroom spawn egg!";
         PlayerInventory inventory = player.getInventory();
@@ -371,6 +377,7 @@ public class Main extends JavaPlugin
       }
       case 41:
       {
+        short id = 95;
         itemstack = new ItemStack(Material.MONSTER EGG, 1, 95);
         prizeName = "Wolf spawn egg!";
         PlayerInventory inventory = player.getInventory();
