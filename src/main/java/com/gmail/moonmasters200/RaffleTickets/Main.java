@@ -200,27 +200,37 @@ public class Main extends JavaPlugin
         prizeName = "10 Tokens!";
         break;
       }
-      // TODO Cases 20 - 23: Add McMMO Credits
+      // TODO Cases 20 - 23: Add music discs yay
       case 20:
       {
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "eco give " + 
-        player.getName() + " 1000");
-        prizeName = "50 McMMO Credits";
+        itemstack = new ItemStack(Material.RECORD_CHIRP, 1);
+        prizeName = "Music disc!";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
         break;
       }
       case 21:
       {
-        prizeName = "25 McMMO Credits";
+        itemstack = new ItemStack(Material.RECORD_MELLOHI, 1);
+        prizeName = "Music disc!";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
         break;
       }
       case 22:
       {
-        prizeName = "10 McMMO Credits";
+        itemstack = new ItemStack(Material.RECORD_FAR, 1);
+        prizeName = "Music disc!";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
         break;
       }
       case 23:
       {
-        prizeName ="10 McMMO Credits";
+        itemstack = new ItemStack(Material.RECORD_MALL, 1);
+        prizeName = "Music disc!";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
         break;
       }
       case 24:
@@ -250,7 +260,7 @@ public class Main extends JavaPlugin
       case 27:
       {
         itemstack = new ItemStack(Material.BLAZE_ROD, 5);
-        prizeName = "Blazkerods!";
+        prizeName = "Blazerods!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
         break;
@@ -258,7 +268,7 @@ public class Main extends JavaPlugin
       case 28:
       {
         itemstack = new ItemStack(Material.BLAZE_ROD, 5);
-        prizeName = "Blazkerods!";
+        prizeName = "Blazerods!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
         break;
@@ -266,7 +276,7 @@ public class Main extends JavaPlugin
       case 29:
       {
         itemstack = new ItemStack(Material.BLAZE_ROD, 5);
-        prizeName = "Blazkerods!";
+        prizeName = "Blazerods!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
         break;
@@ -313,70 +323,56 @@ public class Main extends JavaPlugin
       }
       case 35:
       {
-        itemstack = new ItemStack(Material.DIAMOND_SWORD, 1);
-        Enchantment Sharpness = new EnchantmentWrapper(16);
-        itemstack.addEnchantment(Sharpness, 4);
-        prizeName = "Sharp Diamond Sword!";
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, 92);
+        prizeName = "Cow spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
         break;
       }
       case 36:
       {
-        itemstack = new ItemStack(Material.DIAMOND_SWORD, 1);
-        Enchantment Sharpness = new EnchantmentWrapper(16);
-        itemstack.addEnchantment(Sharpness, 4);
-        prizeName = "Sharp Diamond Sword!";
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, 98);
+        prizeName = "Ocelot spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
         break;
       }
       case 37:
       {
-        itemstack = new ItemStack(Material.DIAMOND_SWORD, 1);
-        Enchantment Sharpness = new EnchantmentWrapper(16);
-        itemstack.addEnchantment(Sharpness, 4);
-        prizeName = "Sharp Diamond Sword!";
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, 66);
+        prizeName = "Witch spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
         break;
       }
       case 38:
       {
-        itemstack = new ItemStack(Material.DIAMOND_AXE, 1);
-        Enchantment Sharpness = new EnchantmentWrapper(16);
-        itemstack.addEnchantment(Sharpness, 3);
-        prizeName = "Sharp Diamond Axe!";
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, 92);
+        prizeName = "Cow spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
         break;
       }
       case 39:
       {
-        itemstack = new ItemStack(Material.DIAMOND_AXE, 1);
-        Enchantment Sharpness = new EnchantmentWrapper(16);
-        itemstack.addEnchantment(Sharpness, 3);
-        prizeName = "Sharp Diamond Axe!";
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, 94);
+        prizeName = "Squid spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
         break;
       }
       case 40:
       {
-        itemstack = new ItemStack(Material.DIAMOND_AXE, 1);
-        Enchantment Sharpness = new EnchantmentWrapper(16);
-        itemstack.addEnchantment(Sharpness, 3);
-        prizeName = "Sharp Diamond Axe!";
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, 96);
+        prizeName = "Mooshroom spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
         break;
       }
       case 41:
       {
-        itemstack = new ItemStack(Material.DIAMOND_AXE, 1);
-        Enchantment Sharpness = new EnchantmentWrapper(16);
-        itemstack.addEnchantment(Sharpness, 3);
-        prizeName = "Sharp Diamond Axe!";
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, 95);
+        prizeName = "Wolf spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
         break;
