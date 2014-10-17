@@ -324,7 +324,7 @@ public class Main extends JavaPlugin
       case 35:
       {
         short id = 92;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, cow);
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
         prizeName = "Cow spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
@@ -333,7 +333,7 @@ public class Main extends JavaPlugin
       case 36:
       {
         short id = 98;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, ocelot);
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
         prizeName = "Ocelot spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
@@ -342,7 +342,7 @@ public class Main extends JavaPlugin
       case 37:
       {
         short id = 66;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, witch);
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
         prizeName = "Witch spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
@@ -351,7 +351,7 @@ public class Main extends JavaPlugin
       case 38:
       {
         short id = 90;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, pig);
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
         prizeName = "Pig spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
@@ -360,7 +360,7 @@ public class Main extends JavaPlugin
       case 39:
       {
         short id = 94;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, squid);
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
         prizeName = "Squid spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
@@ -369,7 +369,7 @@ public class Main extends JavaPlugin
       case 40:
       {
         short id = 96;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, mooshroom);
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
         prizeName = "Mooshroom spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
@@ -378,7 +378,7 @@ public class Main extends JavaPlugin
       case 41:
       {
         short id = 95;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, wolf);
+        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
         prizeName = "Wolf spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
