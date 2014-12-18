@@ -57,7 +57,6 @@ public class Main extends JavaPlugin
       String prizeName;
       
       randomNumber = (int)(Math.random() * 1000);
-      randomNumber = 6;
       switch(randomNumber) 
       {
       case 1:
