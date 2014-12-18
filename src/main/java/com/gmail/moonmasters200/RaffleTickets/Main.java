@@ -22,12 +22,12 @@ public class Main extends JavaPlugin
   {
     if (cmd.getName().equalsIgnoreCase("raffles"))
     {
-      sender.sendMessage(announcePrefix + ChatColor.BLUE + "Raffles Plugin by " + 
-          ChatColor.RED + "millenium200 " + ChatColor.BLUE + "for Imperial Factions Reborn!");
-      sender.sendMessage(announcePrefix + ChatColor.BLUE + "Buy a raffle "
-          + "ticket with " + ChatColor.GREEN + "/raffle buy " + ChatColor.BLUE + 
-          "to get a chance to " + "win lots of cool prizes!");
-      sender.sendMessage(announcePrefix + ChatColor.BLUE + "Tickets: $250, "
+      sender.sendMessage(announcePrefix + ChatColor.AQUA + "Raffles Plugin by " + 
+          ChatColor.RED + "millenium200 " + ChatColor.AQUA + "for Imperial Factions Reborn!");
+      sender.sendMessage(announcePrefix + ChatColor.AQUA + "Buy a raffle "
+          + "ticket with " + ChatColor.GREEN + "/raffle buy " + ChatColor.AQUA + 
+          "to get a chance to " + "win lots of cool prizes once every day!!");
+      sender.sendMessage(announcePrefix + ChatColor.AQUA + "Tickets: $250, "
           + "Prizes include swords, armor, and money!");
       return true;
     }
@@ -56,7 +56,8 @@ public class Main extends JavaPlugin
       ItemStack itemstack;
       String prizeName;
       
-      randomNumber = (int)(Math.random() * 1000);
+      //randomNumber = (int)(Math.random() * 1000);
+      randomNumber = (int) getRandomInteger(2);
       switch(randomNumber) 
       {
       case 1:
@@ -209,64 +210,37 @@ public class Main extends JavaPlugin
         inventory.addItem(itemstack);
         break;
       }
-<<<<<<< HEAD
-      //  Cases 20 - 23: Add McMMO Credits
+      //  Cases 20 - 23: Add McMMO Credits // now just 20
       case 20:
       {
         Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "addcredits " + 
         player.getName() + " 30");
         prizeName = "30 McMMO Credits";
-=======
-      // TODO Cases 20 - 23: Add music discs yay
-      case 20:
-      {
-        itemstack = new ItemStack(Material.RECORD_CHIRP, 1);
-        prizeName = "Music disc!";
-        PlayerInventory inventory = player.getInventory();
-        inventory.addItem(itemstack);
->>>>>>> origin/master
         break;
       }
+      // TODO Cases 21 - 23: Add music discs yay
       case 21:
       {
-<<<<<<< HEAD
-        prizeName = "25 McMMO Credits";
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "addcredits " +
-        player.getName() + " 25");
-=======
-        itemstack = new ItemStack(Material.RECORD_MELLOHI, 1);
+        itemstack = new ItemStack(Material.RECORD_7, 1);
         prizeName = "Music disc!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
->>>>>>> origin/master
         break;
       }
       case 22:
       {
-<<<<<<< HEAD
-        prizeName = "10 McMMO Credits";
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "addcredits " +
-        player.getName() + " 10");
-=======
-        itemstack = new ItemStack(Material.RECORD_FAR, 1);
+        itemstack = new ItemStack(Material.RECORD_5, 1);
         prizeName = "Music disc!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
->>>>>>> origin/master
         break;
       }
       case 23:
       {
-<<<<<<< HEAD
-        prizeName ="10 McMMO Credits";
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "addcredits " +
-        player.getName() + " 10");
-=======
-        itemstack = new ItemStack(Material.RECORD_MALL, 1);
+        itemstack = new ItemStack(Material.RECORD_4, 1);
         prizeName = "Music disc!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
->>>>>>> origin/master
         break;
       }
       case 24:
@@ -360,7 +334,7 @@ public class Main extends JavaPlugin
       case 35:
       {
         short id = 92;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
+        itemstack = new ItemStack(Material.MONSTER_EGG, 1, id);
         prizeName = "Cow spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
@@ -369,7 +343,7 @@ public class Main extends JavaPlugin
       case 36:
       {
         short id = 98;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
+        itemstack = new ItemStack(Material.MONSTER_EGG, 1, id);
         prizeName = "Ocelot spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
@@ -378,7 +352,7 @@ public class Main extends JavaPlugin
       case 37:
       {
         short id = 66;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
+        itemstack = new ItemStack(Material.MONSTER_EGG, 1, id);
         prizeName = "Witch spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
@@ -387,7 +361,7 @@ public class Main extends JavaPlugin
       case 38:
       {
         short id = 90;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
+        itemstack = new ItemStack(Material.MONSTER_EGG, 1, id);
         prizeName = "Pig spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
@@ -396,7 +370,7 @@ public class Main extends JavaPlugin
       case 39:
       {
         short id = 94;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
+        itemstack = new ItemStack(Material.MONSTER_EGG, 1, id);
         prizeName = "Squid spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
@@ -405,7 +379,7 @@ public class Main extends JavaPlugin
       case 40:
       {
         short id = 96;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
+        itemstack = new ItemStack(Material.MONSTER_EGG, 1, id);
         prizeName = "Mooshroom spawn egg!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
@@ -413,9 +387,10 @@ public class Main extends JavaPlugin
       }
       case 41:
       {
-        short id = 95;
-        itemstack = new ItemStack(Material.MONSTER EGG, 1, id);
-        prizeName = "Wolf spawn egg!";
+        itemstack = new ItemStack(Material.DIAMOND_AXE, 1);
+        Enchantment Sharpness = new EnchantmentWrapper(16);
+        itemstack.addEnchantment(Sharpness, 3);
+        prizeName = "Sharp Diamond Axe!";
         PlayerInventory inventory = player.getInventory();
         inventory.addItem(itemstack);
         break;
@@ -509,5 +484,25 @@ public class Main extends JavaPlugin
     return false;
     
   }
+  
+  /** Generates a random double value with a set length */
+  private static double getRandomInteger(int integerLength) {
+    String randomInteger = "";
+    char c = '0';
+    for (int i = 0; i < integerLength; i++) {
+      if (i == 0)
+        c = getRandomCharacter('1', '9');
+      else 
+        c = getRandomCharacter('0', '9');
+      randomInteger = randomInteger + c;
+    }
+    return Double.parseDouble(randomInteger);
+  }
+  
+  /** Generate a random character between ch1 and ch2 */
+  public static char getRandomCharacter(char ch1, char ch2) {
+    return (char)(ch1 + Math.random() * (ch2 - ch1 + 1));
+  }
+
 
 }
