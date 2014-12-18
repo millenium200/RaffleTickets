@@ -1,6 +1,6 @@
 name: RaffleTickets
 main: com.gmail.moonmasters200.RaffleTickets.Main
-version: 0.0.3-SWAGSNAPSHOT
+version: 0.0.4
 author: millenium200
 commands:
   raffles:

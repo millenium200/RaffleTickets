@@ -15,7 +15,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin
 {
   
-  private String announcePrefix = ChatColor.GOLD + "[Imperial-Raffles] ";
+  private String announcePrefix = "" + ChatColor.DARK_GRAY + "[" + ChatColor.BLUE + ChatColor.BOLD +
+      "ImperialRaffles" + ChatColor.DARK_GRAY + "]" + ChatColor.RESET + " ";
   
   public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
   {
@@ -164,63 +165,78 @@ public class Main extends JavaPlugin
         prizeName = "$1000";
         break;
       }
-      // TODO Check that the tokens command works here.
       case 15:
       {
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "tokens give " + 
-        player.getName() + " 10");
-        prizeName = "10 Tokens!";
+        // 10 Tokens in Future
+        itemstack = new ItemStack(Material.EXP_BOTTLE, 48);
+        prizeName = "48 Bottles of Enchanting";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
         break;
       }
       case 16:
       {
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "tokens give " + 
-        player.getName() + " 50");
-        prizeName = "50 Tokens!";
+        // 25 Tokens in Future
+        itemstack = new ItemStack(Material.EXP_BOTTLE, 48);
+        prizeName = "48 Bottles of Enchanting";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
         break;
       }
       case 17:
       {
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "tokens give " + 
-        player.getName() + " 25");
-        prizeName = "25 Tokens!";
+        // 20 Tokens in Future
+        itemstack = new ItemStack(Material.EXP_BOTTLE, 48);
+        prizeName = "48 Bottles of Enchanting";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
         break;
       }
       case 18:
       {
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "tokens give " + 
-        player.getName() + " 10");
-        prizeName = "10 Tokens!";
+        // 10 Tokens in Future
+        itemstack = new ItemStack(Material.EXP_BOTTLE, 48);
+        prizeName = "48 Bottles of Enchanting";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
         break;
       }
       case 19:
       {
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "tokens give " + 
-        player.getName() + " 10");
-        prizeName = "10 Tokens!";
+        // 10 Tokens in Future
+        itemstack = new ItemStack(Material.EXP_BOTTLE, 48);
+        prizeName = "48 Bottles of Enchanting";
+        PlayerInventory inventory = player.getInventory();
+        inventory.addItem(itemstack);
         break;
       }
-      // TODO Cases 20 - 23: Add McMMO Credits
+      //  Cases 20 - 23: Add McMMO Credits
       case 20:
       {
-        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "eco give " + 
-        player.getName() + " 1000");
-        prizeName = "50 McMMO Credits";
+        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "addcredits " + 
+        player.getName() + " 30");
+        prizeName = "30 McMMO Credits";
         break;
       }
       case 21:
       {
         prizeName = "25 McMMO Credits";
+        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "addcredits " +
+        player.getName() + " 25");
         break;
       }
       case 22:
       {
         prizeName = "10 McMMO Credits";
+        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "addcredits " +
+        player.getName() + " 10");
         break;
       }
       case 23:
       {
         prizeName ="10 McMMO Credits";
+        Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "addcredits " +
+        player.getName() + " 10");
         break;
       }
       case 24:
